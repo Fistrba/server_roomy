@@ -13,7 +13,7 @@ const io = socketIO(server, {
   },
 });
 
-const PORT = 3000;
+const PORT = process.env.PORT || 3001;
 
 const rooms = {};
 const infos = {};
